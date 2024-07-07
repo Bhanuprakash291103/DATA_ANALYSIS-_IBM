@@ -1,0 +1,32 @@
+import pandas as pd
+
+# Replace 'employee_burnout_analysis-AI.xlsx' with the path to your Excel file
+file_path = 'employee_burnout_analysis-AI.xlsx'
+
+# Load the Excel file
+df = pd.read_excel(file_path)
+
+# Display the first few rows of the dataframe
+print(df.head())
+
+# Extract specific columns (if needed)
+employee_id = df['Employee ID']
+date_of_joining = df['Date of Joining']
+gender = df['Gender']
+company_type = df['Company Type']
+wfh_setup_available = df['WFH Setup Available']
+designation = df['Designation']
+resource_allocation = df['Resource Allocation']
+mental_fatigue_score = df['Mental Fatigue Score']
+burn_rate = df['Burn Rate']
+
+# Print the extracted columns
+print("Employee ID:", employee_id.head())
+print("Date of Joining:", date_of_joining.head())
+print("Gender:", gender.head())
+print("Company Type:", company_type.head())
+print("WFH Setup Available:", wfh_setup_available.head())
+print("Designation:", designation.head())
+print("Resource Allocation:", resource_allocation.head())
+print("Mental Fatigue Score:", mental_fatigue_score.head())
+print("Burn Rate:", burn_rate.head())
